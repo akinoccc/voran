@@ -1,9 +1,9 @@
-import { transformerDirectives } from "unocss";
+import { transformerDirectives } from 'unocss'
 
 export default defineNuxtConfig({
   modules: [
     '@unocss/nuxt',
-    '@nuxt/content'
+    '@nuxt/content',
   ],
   unocss: {
     uno: true,
@@ -47,7 +47,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   alias: {
-    '~': '/'
+    '~': '/',
   },
   // css: [
   //   '~/assets/style/global.css'

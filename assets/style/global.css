@@ -1,22 +1,22 @@
 a {
-    color: inherit;
-    text-decoration: underline;
-    cursor: pointer;
+  color: inherit;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 a:hover {
-    color: #444263;
+  color: #444263;
 }
 
 h1 {
-    font-weight: 700;
-    font-size: 2em;
+  font-weight: 700;
+  font-size: 2em;
 }
 
 p {
-    margin: 1.2em 0;
+  margin: 1.2em 0;
 }
 
 * {
-    transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
