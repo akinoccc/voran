@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-justify-between">
+    <div class="ml-16 mr-16 flex flex-justify-between">
         <div class="flex">
             <div class="mr-4">
                 <div class="">logo</div>

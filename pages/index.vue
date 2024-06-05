@@ -1,6 +1,6 @@
 <template>
-    <div class="p-16">
-        <ContentDoc path="bio" v-slot="{ doc }">
+    <div class="flex flex-justify-center">
+        <ContentDoc class="max-w-2xl" path="bio" v-slot="{ doc }">
             <ContentRenderer :value="doc" />
             <div class=" text-black">
                 <p>Find me on:</p>

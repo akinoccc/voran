@@ -1,5 +1,5 @@
 <template>
-    <div class="p-8 pl-14 pr-14">
+    <div class="pt-8 pb-8">
         <AppHeader />
         <slot />
     </div>
