@@ -23,19 +23,19 @@ const articlesByYear = computed<{ year: number, articles: ParsedContent[] }[]>((
 </script>
 
 <template>
-  <main class="px-7 py-10 m-auto" style="max-width: 67ch;">
-    <div v-for="year in articlesByYear" :key="year.year" class="m-auto mb-16">
-      <div class="select-none relative h20 op-10" slide-enter style="--enter-stage: -2; --enter-step: 60ms">
+  <main class="prose px-7 py-10 m-auto">
+    <div v-for="year in articlesByYear" :key="year.year" class="m-auto mb-16 slide-enter-content">
+      <div class="select-none relative h20" slide-enter style="--enter-stage: -2; --enter-step: 60ms">
         <span
           class="text-8em color-transparent absolute left--2rem top--2rem font-bold text-stroke-2
-                    text-stroke-hex-aaa"
+                    text-stroke-hex-aaa op-20"
         >
           {{ year.year }}
         </span>
       </div>
       <ul class="pos-relative z-1">
-        <a v-for="article in year.articles" :key="article._path">
-          <li class="mb-4 text-neutral hover:text-black" flex="~ col md:row gap-2 md:items-center">
+        <a v-for="article in year.articles" :key="article._path" class="slide-enter" style="--enter-stage: 0; --enter-step: 60ms;" :href="article._path">
+          <li class="mb-4 transition-opacity transition-duration-500  op-60 hover:op-100" flex="~ col md:row gap-2 md:items-center">
             <span class="text-lg" flex="~ gap-2 wrap">{{ article.title }}</span>
             <span class="text-size-xs" flex="~ gap-2 items-center">
               {{ dayjs(article.date).format('MMM D') }}

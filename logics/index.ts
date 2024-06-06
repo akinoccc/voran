@@ -7,7 +7,6 @@ export const isDark = useDark()
  * @see https://github.com/vuejs/vitepress/pull/2347
  */
 export function toggleDark(event: MouseEvent) {
-  console.log(1111)
   // @ts-expect-error experimental API
   const isAppearanceTransition = document.startViewTransition
     && !window.matchMedia('(prefers-reduced-motion: reduce)').matches

@@ -1,9 +1,15 @@
+<script setup lang="ts">
+</script>
+
 <template>
   <main class="px-7 py-10">
-    <article class="m-auto" style="max-width: 67ch;">
+    <article class="prose m-auto slide-enter-content">
       <ContentDoc v-slot="{ doc }" path="bio">
-        <ContentRenderer :value="doc" />
-        <div class="text-black">
+        <ContentRenderer :value="doc">
+          <h1>{{ doc.title }}</h1>
+          <ContentRendererMarkdown tag="article" :value="doc" />
+        </ContentRenderer>
+        <div>
           <p>Find me on:</p>
           <a href="https://github.com/akinocccc">
             <i i-tabler-brand-github />
