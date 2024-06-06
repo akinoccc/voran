@@ -3,7 +3,7 @@ import AppHeader from './AppHeader.vue'
 </script>
 
 <template>
-  <div class="pt-8 pb-8">
+  <div>
     <AppHeader />
     <slot />
   </div>

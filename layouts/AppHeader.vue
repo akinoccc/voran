@@ -1,13 +1,9 @@
 <template>
-  <div class="ml-16 mr-16 flex flex-justify-between">
-    <div class="flex">
-      <div class="mr-4">
-        <div class="">
-          logo
-        </div>
-      </div>
-    </div>
-    <div class="flex flex-1 flex-justify-end text-neutral text-size-sm font-400">
+  <nav class="nav">
+    <NuxtLink class="flex" to="/">
+      logo
+    </NuxtLink>
+    <div class="flex flex-1 flex-justify-end items-center text-neutral font-400">
       <a class="decoration-none hover:text-black" href="/blog">
         Blog
       </a>
@@ -17,9 +13,20 @@
       <a class="ml-4 hover:text-black i-tabler-brand-discord" href="https://x.com/akinoccc" target="_blank" />
       <a class="ml-4 hover:text-black i-tabler-brand-x" href="https://x.com/akinoccc" target="_blank" />
       <a
-        class="ml-4 hover:text-black i-tabler-brand-github" href="https://github.com/akinocccc"
+        class="ml-4 mr-4 hover:text-black i-tabler-brand-github" href="https://github.com/akinocccc"
         target="_blank"
       />
+      <ToggleTheme />
     </div>
-  </div>
+  </nav>
 </template>
+
+<style scoped>
+.nav {
+  padding: 2rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto max-content;
+  box-sizing: border-box;
+}
+</style>

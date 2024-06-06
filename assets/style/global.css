@@ -1,19 +1,25 @@
-a {
+ a {
   color: inherit;
-  text-decoration: underline;
   cursor: pointer;
 }
 
-a:hover {
+article a {
+  text-decoration: underline;
+}
+
+article a:hover {
   color: #444263;
 }
 
 h1 {
-  font-weight: 700;
-  font-size: 2em;
+  font-weight: 800;
+  font-size: 2.25em;
+  margin-top: 0;
+  margin-bottom: .2em;
+  line-height: 1.1111111;
 }
 
-p {
+article p {
   margin: 1.2em 0;
 }
 
