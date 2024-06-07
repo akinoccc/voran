@@ -1,0 +1,13 @@
+category: Github Action
+projects:
+  - name: selected-collaborators
+    link: https://github.com/amazing-actions/selected-collaborators
+    description: Randomly select collaborators from repo.
+
+  - name: github-action-starter
+    link: https://github.com/amazing-actions/github-action-starter
+    description: A dev starter template for github action.
+
+  - name: wx-work-bot
+    link: https://github.com/amazing-actions/wx-work-bot
+    description: Notify your github action with Wechat Work.

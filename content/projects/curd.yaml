@@ -1,0 +1,10 @@
+category: CURD
+projects:
+  - name: uozi-tech/antdv
+    link: https://github.com/uozi-tech/antdv
+    icon:
+    description: A curd component based antdv.
+  - name: uozi-tech/cosy
+    link: https://github.com/uozi-tech/cosy
+    icon:
+    description: A fast curd tool based gin.
