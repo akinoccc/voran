@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   branch: master
 media_folder: content/images
 public_folder: /images
