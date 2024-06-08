@@ -27,8 +27,8 @@ const articlesByYear = computed<{ year: number, articles: ParsedContent[] }[]>((
     <div v-for="year in articlesByYear" :key="year.year" class="m-auto mb-16 slide-enter-content">
       <div class="select-none relative h20" slide-enter style="--enter-stage: -2; --enter-step: 60ms">
         <span
-          class="text-8em color-transparent absolute left--2rem top--2rem font-bold text-stroke-2
-                    text-stroke-hex-aaa op-20"
+          class="text-8em color-transparent absolute left--2rem top--1rem font-bold text-stroke-2
+                    text-stroke-hex-aaa op-10"
         >
           {{ year.year }}
         </span>
