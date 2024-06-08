@@ -1,5 +1,6 @@
 backend:
   name: github
+  repo: akinocccc/voran
   branch: master
 media_folder: content/images
 public_folder: /images
