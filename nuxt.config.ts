@@ -1,6 +1,7 @@
 import { transformerDirectives } from 'unocss'
 
 export default defineNuxtConfig({
+  ssr: true,
   modules: [
     '@unocss/nuxt',
     '@nuxt/content',
