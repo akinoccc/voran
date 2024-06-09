@@ -8,6 +8,9 @@ const articlesByYear = computed<{ year: number, articles: ParsedContent[] }[]>((
   const articlesByYear: Record<number, ParsedContent[]> = {}
 
   articles?.forEach((article) => {
+    if (article.draft)
+      return
+
     const year = new Date(article.date).getFullYear()
     if (!articlesByYear[year]) {
       articlesByYear[year] = []

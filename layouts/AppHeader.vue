@@ -1,3 +1,6 @@
+<script setup lang="ts">
+</script>
+
 <template>
   <header class="header">
     <NuxtLink class="logo" to="/">
