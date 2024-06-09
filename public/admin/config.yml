@@ -18,3 +18,21 @@ collections:
       - {label: Draft, name: draft, widget: boolean, required: false}
       - {label: Date, name: date, widget: datetime}
       - {label: Body, name: body, widget: markdown}
+
+  - name: projetcs
+    label: Projects
+    folder: content/projects
+    create: true
+    extension: yaml
+    format: yaml
+    slug: '{{slug}}'
+    fields:
+      - {label: Category, name: category, widget: string}
+      - label: Projects
+        name: projects
+        widget: list
+        fields:
+          - {label: Name, name: name, widget: string}
+          - {label: Link, name: link, widget: string}
+          - {label: Icon, name: icon, widget: image}
+          - {label: Description, name: description, widget: text}
