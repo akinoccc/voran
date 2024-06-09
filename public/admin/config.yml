@@ -2,6 +2,7 @@ backend:
   name: github
   repo: akinocccc/voran
   branch: main
+  site_domain: akinoccc.netlify.app
 media_folder: content/images
 public_folder: /images
 collections:
