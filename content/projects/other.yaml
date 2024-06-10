@@ -1,0 +1,16 @@
+category: Other
+projects:
+  - name: Wind power equipment transportation sensing APP
+    description: An APP that uses LiDAR to monitor and display real-time distance between wind turbine blades and obstacles.
+
+  - name: SZTU class schedule mini program
+    description: A mini program that integrates class schedules, grades, and school notifications.
+
+  - name: NewMonkey(Tencent Mini Project)
+    description: Automated evaluation of Android app aging-friendliness and report generation.
+
+  - name: 5G campus security system
+    description: abnormal event monitoring, early warning, alarm functionalities, and personnel trajectory visualization using ThingJs.
+
+  - name: Canteen Smart Service Mini Program
+    description: A mini program that provides cafeteria menu today, take-out service.
