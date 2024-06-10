@@ -4,7 +4,7 @@ import type { ParsedContent } from '@nuxt/content/types'
 
 const articles = await queryContent('/articles').find()
 
-const articlesByYear = computed<{ year: number, articles: ParsedContent[] }[]>(() => {
+const articlesSortedByYear = computed<{ year: number, articles: ParsedContent[] }[]>(() => {
   const articlesByYear: Record<number, ParsedContent[]> = {}
 
   articles?.forEach((article) => {
@@ -18,16 +18,16 @@ const articlesByYear = computed<{ year: number, articles: ParsedContent[] }[]>((
     articlesByYear[year].push(article)
   })
 
-  return Object.keys(articlesByYear).sort((a, b) => b - a).map(year => ({
-    year,
-    articles: articlesByYear[year],
-  }))
+  return Object.entries(articlesByYear)
+    .sort((a, b) => Number(b[0]) - Number(a[0]))
+    .map(([year, articles]) => ({ year: Number(year), articles }))
 })
 </script>
 
 <template>
+  <Art page="blog" />
   <main class="prose px-7 py-10 m-auto">
-    <div v-for="year in articlesByYear" :key="year.year" class="m-auto mb-16 slide-enter-content">
+    <div v-for="year in articlesSortedByYear" :key="year.year" class="m-auto mb-16 slide-enter-content">
       <div class="select-none relative h20" slide-enter style="--enter-stage: -2; --enter-step: 60ms">
         <span
           class="text-8em color-transparent absolute left--2rem top--1rem font-bold text-stroke-2

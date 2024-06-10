@@ -3,6 +3,7 @@ import dayjs from 'dayjs'
 </script>
 
 <template>
+  <Art page="blogDetail" />
   <main class="px-7 py-10">
     <div class="prose m-auto slide-enter-content">
       <ContentDoc v-slot="{ doc }" tag="div">

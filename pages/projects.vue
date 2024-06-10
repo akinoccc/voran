@@ -1,4 +1,5 @@
 <template>
+  <Art page="projects" />
   <main class="px-7 py-10">
     <div class="prose m-auto text-center mb-10" slide-enter style="--enter-stage: -1">
       <h1 style="margin-bottom: 0;">

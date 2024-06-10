@@ -2,4 +2,4 @@ category: Blog
 projects:
   - name: Voran
     link: https://github.com/akinocccc/voran
-    description: A blog build with Nuxt and design based on antfu.me.
+    description: A blog built with Nuxt and design based on antfu.me.

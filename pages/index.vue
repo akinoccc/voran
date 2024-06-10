@@ -2,9 +2,10 @@
 </script>
 
 <template>
+  <Art page="index" />
   <main class="px-7 py-10">
     <article class="prose m-auto slide-enter-content">
-      <ContentDoc v-slot="{ doc }" path="bio">
+      <ContentDoc v-slot="{ doc }" path="index">
         <ContentRenderer :value="doc">
           <h1>{{ doc.title }}</h1>
           <ContentRendererMarkdown tag="article" :value="doc" />
