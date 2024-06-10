@@ -26,14 +26,14 @@
   animation: move 3000s linear infinite;
 }
 .sun {
-  height: 6em;
-  width: 6em;
+  height: 5em;
+  width: 5em;
   border-radius: 50%;
-  background: radial-gradient(circle, #ffdf00, #ff9500);
+  background: radial-gradient(circle, #ffdf00, #ff4800);
   box-shadow:
     0 0 20px #ffdf00,
     0 0 40px #ff9500,
-    0 0 60px #ff9500;
+    0 0 60px #ff4800;
   position: relative;
   animation: blinking 2s linear infinite alternate;
 }
@@ -52,8 +52,8 @@
 }
 .earth::before {
   content: '';
-  width: 4em;
-  height: 4em;
+  width: 3em;
+  height: 3em;
   background: radial-gradient(circle, #2a9d8f, #264653);
   box-shadow: 0 0 10px #2a9d8f;
   border-radius: 50%;
