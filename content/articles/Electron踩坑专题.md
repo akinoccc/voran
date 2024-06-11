@@ -100,7 +100,7 @@ React-router v6版本使用懒加载组件，报错
 
 ```tsx
 {
-  ... ...
+  // ... ...
   element: lazy(() => import('@renderer/layout/AppLayout')) // 无效，报错
 }
 ```
@@ -110,9 +110,9 @@ React-router v6版本使用懒加载组件，报错
 解决：修改为以下配置即可：
 
 ```tsx
-const AppLayout = lazy(() => import('@renderer/layout/AppLayout'));
+const AppLayout = lazy(() => import('@renderer/layout/AppLayout'))
 {
-  ... ...
+  // ... ...
   element: <AppLayout /> // 无效，报错
 }
 ```

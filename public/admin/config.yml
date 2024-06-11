@@ -6,6 +6,79 @@ backend:
 media_folder: content/images
 public_folder: /images
 collections:
+  - name: site
+    label: Site Configuration
+    slug: '{{slug}}'
+    files:
+      - label: Site
+        name: site
+        file: config/site.json
+        extension: json
+        format: json
+        fields:
+          - {label: Logo, name: logo, widget: image}
+          - {label: Favicon, name: favicon, widget: image}
+          - label: Footer
+            name: footer
+            widget: object
+            required: false
+            fields:
+              - {label: Copyright, name: copyright, widget: string}
+              - label: links
+                name: links
+                widget: list
+                fields:
+                  - {label: Text, name: text, widget: string}
+                  - {label: Url, name: url, widget: string}
+
+      - label: Pages
+        name: pages
+        file: config/pages.json
+        extension: json
+        format: json
+        fields:
+          - label: Index,
+            name: index
+            widget: object
+            required: false
+            fields:
+              - {label: Art, name: art, widget: string, description: 'plum, dots or random'}
+              - {label: Description, name: description, widget: text, required: false}
+          - label: Blog,
+            name: blog
+            widget: object
+            required: false
+            fields:
+              - {label: Art, name: art, widget: string, description: 'plum, dots or random'}
+              - {label: Description, name: description, widget: text, required: false}
+          - label: Blog Detail,
+            name: blog_detail
+            widget: object
+            required: false
+            fields:
+              - {label: Art, name: art, widget: string, description: 'plum, dots or random'}
+              - {label: Description, name: description, widget: text, required: false}
+          - label: Projects,
+            name: projects
+            widget: object
+            required: false
+            fields:
+              - {label: Art, name: art, widget: string, description: 'plum, dots or random'}
+              - {label: Description, name: description, widget: text, required: false}
+
+      - label: Social Link
+        name: social
+        file: config/social.json
+        extension: json
+        format: json
+        widget: object
+        fields:
+          - {label: Github, name: github, widget: string, required: false}
+          - {label: Discord, name: discord, widget: string, required: false}
+          - {label: X, name: x, widget: string, required: false}
+          - {label: Email, name: email, widget: string, required: false}
+          - {label: RSS, name: rss, widget: string, required: false}
+
   - name: articles
     label: Articles
     folder: content/articles
@@ -33,6 +106,6 @@ collections:
         widget: list
         fields:
           - {label: Name, name: name, widget: string}
-          - {label: Link, name: link, widget: string}
-          - {label: Icon, name: icon, widget: image}
-          - {label: Description, name: description, widget: text}
+          - {label: Link, name: link, widget: string, required: false}
+          - {label: Icon, name: icon, widget: image, required: false}
+          - {label: Description, name: description, widget: text, required: false}

@@ -49,8 +49,19 @@ export default defineNuxtConfig({
     enabled: true,
 
     timeline: {
-      enabled: true
-    }
+      enabled: true,
+    },
+  },
+  content: {
+    highlight: {
+      theme: {
+        // Default theme (same as single string)
+        default: 'github-light',
+        light: 'github-light',
+        // Theme used if `html.dark`
+        dark: 'github-dark',
+      },
+    },
   },
 
   alias: {

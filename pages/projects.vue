@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const { description } = useAppConfig()?.pages?.projects
+</script>
+
 <template>
   <Art page="projects" />
   <main class="px-7 py-10">
@@ -6,7 +10,7 @@
         Projects
       </h1>
       <p op50 text-lg italic>
-        Projects that I created or maintaining.
+        {{ description ?? 'Projects that I created or maintaining.' }}
       </p>
     </div>
 

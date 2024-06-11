@@ -1,10 +1,12 @@
 <script setup lang="ts">
+const { logo, social } = useAppConfig()
 </script>
 
 <template>
   <header class="header">
     <NuxtLink class="logo" to="/">
-      logo
+      <img v-if="logo" class="w-10 h-10 op-80 rounded hover-op100" :src="logo" alt="logo">
+      <span v-else>Home</span>
     </NuxtLink>
     <nav class="nav">
       <div class="spacer" />
@@ -17,10 +19,11 @@
           <span class="lt-md:hidden">Projects</span>
           <div i-tabler-bulb class="md:hidden" />
         </NuxtLink>
-        <NuxtLink i-tabler-brand-discord to="https://x.com/akinoccc" target="_blank" />
-        <NuxtLink i-tabler-brand-x to="https://x.com/akinoccc" target="_blank" />
+        <NuxtLink v-if="social?.discord" i-tabler-brand-discord :to="social?.discord" target="_blank" />
+        <NuxtLink v-if="social?.x" i-tabler-brand-x :to="social?.x" target="_blank" />
         <NuxtLink
-          i-tabler-brand-github to="https://github.com/akinocccc"
+          v-if="social?.github" i-tabler-brand-github
+          :to="social?.github"
           target="_blank"
         />
         <ToggleTheme />

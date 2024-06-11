@@ -1,0 +1,15 @@
+{
+  "index": {
+    "art": "plum"
+  },
+  "blog": {
+    "art": "plum"
+  },
+  "blogDetail": {
+    "art": "plum"
+  },
+  "projects": {
+    "art": "dots",
+    "description": "The projects that I created or maintaining."
+  }
+}
