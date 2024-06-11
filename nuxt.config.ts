@@ -67,7 +67,7 @@ export default defineNuxtConfig({
   alias: {
     '~': '/',
   },
-  // css: [
-  //   '~/assets/style/global.css'
-  // ]
+  routeRules: {
+    '/articles': { prerender: false },
+  },
 })
