@@ -3,6 +3,13 @@ backend:
   repo: akinocccc/voran
   branch: main
   site_domain: akinoccc.netlify.app
+  commit_messages:
+    create: 'create: {{collection}} “{{slug}}”'
+    update: 'update: {{collection}} “{{slug}}”'
+    delete: 'delete: {{collection}} “{{slug}}”'
+    uploadMedia: 'upload(media): “{{path}}”'
+    deleteMedia: 'delete(media): “{{path}}”'
+    openAuthoring: '''{{message}}'''
 media_folder: content/images
 public_folder: /images
 collections:
