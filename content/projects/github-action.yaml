@@ -8,6 +8,6 @@ projects:
     link: https://github.com/amazing-actions/github-action-starter
     description: A dev starter template for github action.
 
-  - name: wx-work-bot
-    link: https://github.com/amazing-actions/wx-work-bot
-    description: Notify your github action with Wechat Work.
+  - name: wecom-bot-notifier
+    link: https://github.com/amazing-actions/wecom-bot-notifier
+    description: Notify you wecom bot.
