@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: akinocccc/voran
+  repo: akinoccc/voran
   branch: main
   site_domain: akinoccc.netlify.app
   commit_messages:

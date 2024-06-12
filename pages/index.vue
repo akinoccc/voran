@@ -12,7 +12,7 @@
         </ContentRenderer>
         <div>
           <p>Find me on:</p>
-          <a href="https://github.com/akinocccc">
+          <a href="https://github.com/akinoccc">
             <i i-tabler-brand-github />
             Github
           </a>
