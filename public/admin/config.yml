@@ -86,6 +86,16 @@ collections:
           - {label: Email, name: email, widget: string, required: false}
           - {label: RSS, name: rss, widget: string, required: false}
 
+  - name: home
+    label: Home
+    slug: '{{slug}}'
+    files:
+      - label: Home
+        name: home
+        file: content/home
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Body, name: body, widget: markdown}
   - name: articles
     label: Articles
     folder: content/articles
