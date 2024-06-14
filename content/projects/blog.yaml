@@ -3,3 +3,6 @@ projects:
   - name: Voran
     link: https://github.com/akinoccc/voran
     description: A blog built with Nuxt and design based on antfu.me.
+  - name: hexo-theme-alog
+    link: https://github.com/akinoccc/hexo-theme-alog
+    description: A hexo theme.
