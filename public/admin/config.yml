@@ -92,7 +92,7 @@ collections:
     files:
       - label: Home
         name: home
-        file: content/home
+        file: content/home.md
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Body, name: body, widget: markdown}
