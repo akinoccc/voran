@@ -33,11 +33,11 @@ const { description } = useAppConfig()?.pages?.projects
                 {{ p.name[0].toUpperCase() }}
               </h2>
               <div flex-1>
-                <div>
+                <h3 class="text-lg ">
                   {{ p.name }}
-                </div>
+                </h3>
 
-                <div class="text-xs text-neutral">
+                <div class="text-sm text-neutral">
                   {{ p.description }}
                 </div>
               </div>

@@ -33,10 +33,21 @@ collections:
               - {label: Copyright, name: copyright, widget: string}
               - label: links
                 name: links
-                widget: list
+                widget: object
+                create: true
                 fields:
-                  - {label: Text, name: text, widget: string}
-                  - {label: Url, name: url, widget: string}
+                  - label: License
+                    name: license
+                    widget: object
+                    fields:
+                      - {label: License, name: license, widget: string}
+                      - {label: URL, name: url, widget: string}
+                  - label: author
+                    name: author
+                    widget: object
+                    fields:
+                      - {label: Name, name: name, widget: string}
+                      - {label: URL, name: url, widget: string}
 
       - label: Pages
         name: pages
@@ -96,6 +107,7 @@ collections:
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Body, name: body, widget: markdown}
+
   - name: articles
     label: Articles
     folder: content/articles

@@ -1,10 +1,14 @@
 {
   "logo": "https://blog-1302037900.cos.ap-guangzhou.myqcloud.com/images/logo.png",
   "footer": {
-    "copyright": "[license] © 2024-present [author]",
-    "links": {
-      "license": "/CC-BY-NC-SA-4.0",
-      "author": "https://github.com/akinoccc"
+    "copyright": "[license] © 2024-PRESENT [author]",
+    "license": {
+      "name": "CC-BY-NC-SA-4.0",
+      "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "author": {
+      "name": "Akinoccc",
+      "url": "https://github.com/akinoccc"
     }
   }
 }

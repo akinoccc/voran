@@ -26,7 +26,7 @@ const articlesSortedByYear = computed<{ year: number, articles: ParsedContent[] 
 
 <template>
   <Art page="blog" />
-  <main class="prose px-7 py-10 m-auto">
+  <main class="prose m-auto">
     <div v-for="year in articlesSortedByYear" :key="year.year" class="m-auto mb-16 slide-enter-content">
       <div class="select-none relative h20" slide-enter style="--enter-stage: -2; --enter-step: 60ms">
         <span
