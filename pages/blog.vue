@@ -20,7 +20,7 @@ const articlesSortedByYear = computed<{ year: number, articles: ParsedContent[] 
 
   return Object.entries(articlesByYear)
     .sort((a, b) => Number(b[0]) - Number(a[0]))
-    .map(([year, articles]) => ({ year: Number(year), articles }))
+    .map(([year, articles]) => ({ year: Number(year), articles: articles.sort((a, b) => dayjs(b.date).diff(dayjs(a.date))) }))
 })
 </script>
 
@@ -38,7 +38,7 @@ const articlesSortedByYear = computed<{ year: number, articles: ParsedContent[] 
       </div>
       <ul class="pos-relative z-1">
         <NuxtLink v-for="article in year.articles" :key="article._path" class="slide-enter" style="--enter-stage: 0; --enter-step: 60ms;" :to="article._path">
-          <li class="mb-4 transition-opacity transition-duration-500  op-60 hover:op-100" flex="~ col md:row gap-2 md:items-center">
+          <li class="mb-4 transition-opacity transition-duration-500  op-60 hover:op-100" flex="~ col md:row gap-2 md:items-end">
             <span class="text-lg" flex="~ gap-2 wrap">{{ article.title }}</span>
             <span class="text-size-xs" flex="~ gap-2 items-center">
               {{ dayjs(article.date).format('MMM D') }}
