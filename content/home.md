@@ -1,8 +1,9 @@
 ---
-title: "Akinoccc"
+title: Akinoccc
 ---
-
 Hey! this is Akino, a full stack developer and a passionate open-source enthusiast.
+
+I﻿nterned at `Tencent`, `Ravision`
 
 Working at `Uozi`
 
