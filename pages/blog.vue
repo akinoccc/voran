@@ -26,11 +26,11 @@ const articlesSortedByYear = computed<{ year: number, articles: ParsedContent[] 
 
 <template>
   <Art page="blog" />
-  <main class="prose m-auto">
+  <main class="prose m-auto px-4">
     <div v-for="year in articlesSortedByYear" :key="year.year" class="m-auto mb-16 slide-enter-content">
       <div class="select-none relative h20" slide-enter style="--enter-stage: -2; --enter-step: 60ms">
         <span
-          class="text-8em color-transparent absolute left--2rem top--1rem font-bold text-stroke-2
+          class="text-8em color-transparent absolute left--2rem top--1rem px-2 font-bold text-stroke-2
                     text-stroke-hex-aaa op-10"
         >
           {{ year.year }}
